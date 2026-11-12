@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="Directional Home Details — short-term rental turnover cleaning and residential house cleaning across North Carolina, from the coast to Hillsborough. Clean Spaces. Better Stays. Call 919-262-6079." />
+<link rel="icon" href="data:," />
+<title>Directional Home Details — Clean Spaces. Better Stays. | 919-262-6079</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    color-scheme: light dark;
+    --navy:#0B2340;
+    --navy-2:#0E3A36;
+    --navy-3:#0B4F49;
+    --teal:#0BB5AD;
+    --teal-deep:#067A72;
+    --teal-dark:#04594F;
+    --coral:#FF6B4A;
+    --coral-deep:#C93315;
+    --gold:#FFC53D;
+    --gold-deep:#A87400;
+    --ink:#14313B;
+    --muted:#51666C;
+    --bg:#FFFFFF;
+    --bg-soft:#FFF7EA;
+    --bg-sand:#FFF1DC;
+    --line:#F0E2C8;
+    --card:#FFFFFF;
+    --header-bg:rgba(255,255,255,.92);
+    --shadow:0 18px 44px rgba(4,89,79,.18);
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#EDF7F5;
+      --muted:#A9C4BE;
+      --bg:#052E2B;
+      --bg-soft:#06403B;
+      --bg-sand:#073B36;
+      --line:#12544E;
+      --card:#0A453F;
+      --header-bg:rgba(5,46,43,.92);
+      --shadow:0 18px 44px rgba(0,0,0,.45);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; overflow-x:clip}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;
+    overflow-x:clip; width:100%;
+  }
+  @media (max-width:760px){ body{padding-bottom:78px} }
+  img{max-width:100%; display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:"Playfair Display",Georgia,serif; font-weight:600; line-height:1.12; margin:0; overflow-wrap:break-word}
+  p,li,span,b{overflow-wrap:break-word}
+  .wrap{width:100%; max-width:1180px; margin:0 auto; padding-left:24px; padding-right:24px}
+  @media (min-width:960px){ .wrap{padding-left:32px; padding-right:32px} }
+  .hero-grid>*,.story-grid>*,.about-grid>*,.quote-grid>*,.svc-grid>*,.why-grid>*,.steps>*,.trust-in>*,.foot-grid>*{min-width:0}
+  .script{font-family:"Great Vibes",cursive; font-weight:400}
+
+  /* ---------- Header ---------- */
+  header.site{
+    position:sticky; top:0; z-index:60;
+    background:var(--header-bg); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  header.site.scrolled{box-shadow:0 8px 28px rgba(4,89,79,.16)}
+  .header-in{display:flex; align-items:center; gap:18px; padding-top:10px; padding-bottom:10px}
+  .brand{display:flex; align-items:center; gap:11px; text-decoration:none; min-height:48px}
+  .brand .rose{width:46px; height:46px; color:var(--teal-deep); flex:none}
+  @media (prefers-color-scheme: dark){ .brand .rose{color:var(--gold)} }
+  .brand-name{line-height:1.05}
+  .brand-name .b1{display:block; font-family:"Playfair Display",serif; font-weight:700; letter-spacing:.14em; font-size:.82rem; text-transform:uppercase}
+  .brand-name .b2{display:block; font-family:"Playfair Display",serif; font-size:1.28rem; font-weight:600}
+  .brand-name .b2 .bigm{font-family:"Great Vibes",cursive; font-size:1.62rem; color:var(--coral-deep); padding:0 .01em; line-height:0}
+  @media (prefers-color-scheme: dark){ .brand-name .b2 .bigm{color:var(--gold)} }
+  nav.main{margin-left:auto; display:none; gap:26px}
+  nav.main a{text-decoration:none; font-weight:600; font-size:.95rem; padding:10px 2px; min-height:44px; display:inline-flex; align-items:center}
+  nav.main a:hover{color:var(--coral-deep)}
+  .header-cta{margin-left:auto; display:flex; align-items:center; gap:10px}
+  nav.main + .header-cta{margin-left:0}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:9px;
+    min-height:48px; padding:12px 22px; border-radius:999px;
+    font-weight:700; font-size:1rem; text-decoration:none; border:1px solid transparent;
+    cursor:pointer; transition:transform .15s ease, background .15s ease, color .15s ease;
+    font-family:inherit;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn-gold{background:var(--coral-deep); color:#fff}
+  .btn-gold:hover{background:#A82C10; color:#fff}
+  .btn-navy{background:var(--teal-deep); color:#fff}
+  .btn-navy:hover{background:var(--teal-dark)}
+  .btn-outline{border-color:var(--teal); color:var(--ink); background:transparent}
+  .btn-outline:hover{background:#E8FAF7}
+  .btn-phone{padding:12px 18px}
+  .btn .ph-ic{width:18px; height:18px; flex:none}
+  @media (min-width:900px){ nav.main{display:flex} }
+  @media (max-width:560px){
+    .btn-book-h{display:none}
+    .header-in{gap:10px}
+    .brand{gap:8px; min-width:0; flex:1 1 auto}
+    .brand-name{min-width:0}
+    .brand-name .b1{font-size:.66rem; letter-spacing:.1em}
+    .brand-name .b2{font-size:1.02rem; white-space:nowrap}
+    .brand-name .b2 .bigm{font-size:1.4rem}
+    .brand .rose{width:36px; height:36px}
+    .header-cta{flex:none}
+    .btn-phone{padding:10px 13px; font-size:.88rem; white-space:nowrap; min-height:44px}
+    .btn-phone .ph-ic{width:15px; height:15px}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative; overflow:hidden; background:var(--bg-soft)}
+  .hero .compass-watermark{
+    position:absolute; width:min(640px,150vw); height:auto; aspect-ratio:1; right:-190px; top:-170px;
+    color:var(--teal); opacity:.09; pointer-events:none; max-width:none;
+  }
+  @media (prefers-color-scheme: dark){ .hero .compass-watermark{color:#fff; opacity:.06} }
+  .hero-grid{display:grid; gap:34px; padding-top:44px; padding-bottom:54px; position:relative}
+  @media (min-width:960px){ .hero-grid{grid-template-columns:1.02fr .98fr; align-items:center; padding-top:64px; padding-bottom:74px} }
+  .hero-name{display:flex; align-items:center; gap:12px; color:var(--teal-deep); margin-bottom:18px}
+  @media (prefers-color-scheme: dark){ .hero-name{color:var(--gold)} }
+  .hero-name .rose{width:34px; height:34px}
+  .hero-name span{font-weight:800; letter-spacing:.22em; text-transform:uppercase; font-size:.8rem}
+  .hero-name::after{content:""; height:1px; width:64px; background:var(--coral)}
+  .hero h1{font-size:clamp(2.5rem,6.2vw,4.1rem); color:var(--navy); letter-spacing:-.01em}
+  @media (prefers-color-scheme: dark){ .hero h1{color:#fff} }
+  .hero h1 em{font-style:italic; color:var(--coral-deep)}
+  @media (prefers-color-scheme: dark){ .hero h1 em{color:var(--gold)} }
+  .hero p.lede{font-size:1.13rem; color:var(--muted); max-width:34rem; margin:20px 0 0}
+  .hero p.lede strong{color:var(--ink)}
+  .hero-ctas{display:flex; flex-wrap:wrap; gap:12px; margin-top:28px}
+  .hero-stats{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:36px; border-top:1px solid var(--line); padding-top:22px}
+  .hero-stats>div{min-width:0}
+  @media (max-width:700px){
+    .hero-stats{grid-template-columns:1fr; gap:0; margin-top:30px}
+    .hero-stats>div{padding:13px 0; border-top:1px dashed var(--line)}
+    .hero-stats>div:first-child{border-top:0; padding-top:2px}
+    .hero-stats b{font-size:1.45rem}
+    .hero-name{flex-wrap:wrap; row-gap:6px}
+    .hero-name span{letter-spacing:.14em; font-size:.74rem}
+    .hero-name::after{display:none}
+    .hero-ctas{flex-direction:column; align-items:stretch}
+    .hero-ctas .btn{width:100%; text-align:center}
+    .trust-in{grid-template-columns:1fr}
+    .trust-item{padding:16px 4px}
+  }
+  .hero-stats b{display:block; font-family:"Playfair Display",serif; font-size:clamp(1.12rem,3.2vw,1.5rem); color:var(--teal-deep); line-height:1.15}
+  @media (prefers-color-scheme: dark){ .hero-stats b{color:var(--gold)} }
+  .hero-stats span{font-size:.86rem; color:var(--muted); font-weight:600}
+  .hero-photo{position:relative}
+  .hero-photo img{width:100%; height:100%; max-height:560px; object-fit:cover; border-radius:18px; box-shadow:var(--shadow)}
+  .hero-card{
+    position:absolute; left:16px; bottom:16px; right:16px;
+    background:linear-gradient(135deg,var(--teal-deep),var(--teal-dark)); color:#fff; border-radius:var(--radius);
+    padding:16px 20px; display:flex; align-items:center; gap:14px;
+  }
+  @media (min-width:640px){ .hero-card{right:auto; max-width:340px} }
+  .hero-card .rose{width:40px; height:40px; color:var(--gold); flex:none}
+  .hero-card p{margin:0; font-size:.95rem; line-height:1.45}
+  .hero-card p b{font-family:"Playfair Display",serif; font-size:1.08rem; display:block; font-weight:600}
+
+  /* ---------- Trust bar ---------- */
+  .trust{background:linear-gradient(120deg,var(--teal-dark),var(--teal-deep)); color:#fff}
+  .trust-in{display:grid; grid-template-columns:1fr 1fr; gap:0}
+  @media (min-width:900px){ .trust-in{grid-template-columns:repeat(4,1fr)} }
+  .trust-item{padding:20px 18px; display:flex; gap:12px; align-items:flex-start; border-top:1px solid rgba(255,197,61,.45)}
+  @media (min-width:900px){ .trust-item{border-top:0; border-left:1px solid rgba(255,197,61,.45)} .trust-item:first-child{border-left:0} }
+  .trust-item svg{width:24px; height:24px; color:var(--gold); flex:none; margin-top:2px}
+  .trust-item b{display:block; font-size:.98rem; letter-spacing:.02em}
+  .trust-item span{font-size:.85rem; color:#D9F2EF; line-height:1.45; display:block}
+
+  /* ---------- Sections ---------- */
+  section{padding:64px 0}
+  @media (min-width:960px){ section{padding:84px 0} }
+  .sec-head{max-width:44rem; margin-bottom:38px}
+  .sec-head.center{margin-left:auto; margin-right:auto; text-align:center}
+  .sec-head h2{font-size:clamp(1.9rem,4vw,2.7rem); color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .sec-head h2{color:#fff} }
+  .sec-head h2 em{font-style:italic; color:var(--coral-deep)}
+  @media (prefers-color-scheme: dark){ .sec-head h2 em{color:var(--gold)} }
+  .sec-head p{color:var(--muted); margin:14px 0 0; font-size:1.05rem}
+  .rule{display:flex; align-items:center; gap:10px; margin-bottom:16px; color:var(--teal-deep); font-weight:800; letter-spacing:.2em; text-transform:uppercase; font-size:.76rem}
+  .rule::before{content:""; width:38px; height:1px; background:var(--coral)}
+  .sec-head.center .rule{justify-content:center}
+  .sec-head.center .rule::after{content:""; width:38px; height:1px; background:var(--coral)}
+
+  /* Services */
+  .svc-grid{display:grid; gap:20px}
+  @media (min-width:760px){ .svc-grid{grid-template-columns:1fr 1fr} }
+  @media (min-width:1080px){ .svc-grid{grid-template-columns:repeat(3,1fr)} }
+  .svc{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; display:flex; flex-direction:column}
+  .svc img{width:100%; height:190px; object-fit:cover}
+  .svc-body{padding:22px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1}
+  .svc-body h3{font-size:1.3rem; color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .svc-body h3{color:#fff} }
+  .svc-body p{margin:0; color:var(--muted); font-size:.97rem}
+  .svc-body ul{margin:8px 0 0; padding:0; list-style:none}
+  .svc-body li{padding:5px 0 5px 26px; position:relative; font-size:.95rem; font-weight:600}
+  .svc-body li::before{content:""; position:absolute; left:2px; top:12px; width:8px; height:8px; background:var(--coral); transform:rotate(45deg)}
+  .svc .tag{align-self:flex-start; font-size:.72rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--teal-deep); border:1px solid var(--teal); padding:4px 10px; border-radius:999px}
+  .svc-text{justify-content:center; background:linear-gradient(150deg,var(--coral-deep),#D6451F); color:#fff; border-color:var(--coral-deep)}
+  .svc-text .svc-body h3{color:#fff}
+  .svc-text .svc-body p{color:#FFE8DF}
+  .svc-text .svc-body li{color:#EDF1F5}
+  .svc-text a{color:#FFE9A8; font-weight:800; text-decoration:none; margin-top:auto; padding-top:12px; display:inline-block; min-height:44px}
+  .svc-text a:hover{text-decoration:underline}
+
+  /* How it works */
+  .how{background:var(--bg-soft)}
+  .steps{display:grid; gap:20px; counter-reset:step}
+  @media (min-width:900px){ .steps{grid-template-columns:repeat(3,1fr)} }
+  .step{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:28px 24px; position:relative; overflow:hidden}
+  .step .rose{position:absolute; width:120px; height:120px; right:-34px; top:-34px; color:var(--teal); opacity:.08; pointer-events:none}
+  @media (prefers-color-scheme: dark){ .step .rose{color:#fff} }
+  .step-num{font-family:"Playfair Display",serif; font-size:2.6rem; color:var(--coral); line-height:1; display:block}
+  .step h3{font-size:1.3rem; margin:12px 0 8px; color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .step h3{color:#fff} }
+  .step p{margin:0; color:var(--muted); font-size:.97rem}
+  .how-note{text-align:center; margin-top:34px; font-family:"Playfair Display",serif; font-style:italic; font-size:1.3rem; color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .how-note{color:var(--gold)} }
+
+  /* Why us */
+  .why-grid{display:grid; gap:20px}
+  @media (min-width:760px){ .why-grid{grid-template-columns:1fr 1fr} }
+  @media (min-width:1080px){ .why-grid{grid-template-columns:repeat(4,1fr)} }
+  .why{border-top:3px solid var(--coral); background:var(--card); border-left:1px solid var(--line); border-right:1px solid var(--line); border-bottom:1px solid var(--line); border-radius:0 0 var(--radius) var(--radius); padding:26px 22px}
+  .why .ic{width:52px; height:52px; border-radius:50%; background:var(--teal-deep); display:grid; place-items:center; margin-bottom:16px}
+  .why .ic svg{width:25px; height:25px; color:var(--gold)}
+  .why h3{font-size:1.18rem; color:var(--navy); margin-bottom:8px}
+  @media (prefers-color-scheme: dark){ .why h3{color:#fff} }
+  .why p{margin:0; color:var(--muted); font-size:.95rem}
+
+  /* Story */
+  .story{background:var(--bg-sand); position:relative; overflow:hidden}
+  .story-grid{display:grid; gap:40px; align-items:center}
+  @media (min-width:960px){ .story-grid{grid-template-columns:.9fr 1.1fr} }
+  .story-rose{position:relative; display:grid; place-items:center; padding:12px}
+  .story-rose .rose-big{width:min(340px,80vw); height:auto; color:var(--teal-deep)}
+  @media (prefers-color-scheme: dark){ .story-rose .rose-big{color:var(--gold)} }
+  .story-rose .dir{position:absolute; font-family:"Playfair Display",serif; font-weight:700; color:var(--coral-deep)}
+  @media (prefers-color-scheme: dark){ .story-rose .dir{color:var(--gold)} }
+  .dir-w{left:2%; top:50%; transform:translateY(-50%); font-size:1.5rem}
+  .dir-e{right:2%; top:50%; transform:translateY(-50%); font-size:1.5rem}
+  .dir-n{top:-2%; left:50%; transform:translateX(-50%); font-size:1.2rem}
+  .dir-s{bottom:-2%; left:50%; transform:translateX(-50%); font-size:1.2rem}
+  .story-copy h2{font-size:clamp(1.9rem,4vw,2.7rem); color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .story-copy h2{color:#fff} }
+  .story-copy p{color:var(--muted); margin:16px 0 0; font-size:1.05rem}
+  .story-copy p strong{color:var(--ink)}
+  .names{display:grid; gap:14px; margin-top:28px}
+  @media (min-width:640px){ .names{grid-template-columns:repeat(3,1fr)} }
+  .name-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px}
+  .name-card .script{font-size:2rem; color:var(--coral-deep); line-height:1.1; display:block}
+  @media (prefers-color-scheme: dark){ .name-card .script{color:var(--gold)} }
+  .name-card b{display:block; margin-top:6px; font-size:.95rem}
+  .name-card span{font-size:.88rem; color:var(--muted); display:block; margin-top:2px}
+  .story-quote{margin-top:30px; border-left:3px solid var(--coral); padding:6px 0 6px 20px}
+  .story-quote p{margin:0; font-family:"Playfair Display",serif; font-style:italic; font-size:1.35rem; color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .story-quote p{color:#fff} }
+  .story-quote cite{font-style:normal; font-size:.9rem; color:var(--muted); font-weight:700; display:block; margin-top:8px}
+
+  /* About Jennifer */
+  .about-grid{display:grid; gap:36px; align-items:center}
+  @media (min-width:960px){ .about-grid{grid-template-columns:1.05fr .95fr} }
+  .about-photo img{border-radius:18px; box-shadow:var(--shadow); width:100%; height:100%; max-height:480px; object-fit:cover}
+  .about-copy h2{font-size:clamp(1.9rem,4vw,2.6rem); color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .about-copy h2{color:#fff} }
+  .about-copy .hello{font-size:2.6rem; color:var(--coral-deep); line-height:1; display:block; margin-bottom:8px}
+  @media (prefers-color-scheme: dark){ .about-copy .hello{color:var(--gold)} }
+  .about-copy p{color:var(--muted); margin:14px 0 0; font-size:1.05rem}
+  .about-copy p strong{color:var(--ink)}
+  .about-facts{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px}
+  .about-facts span{border:1px solid var(--teal); color:var(--ink); font-weight:700; font-size:.88rem; border-radius:999px; padding:8px 14px}
+
+  /* About Us (combined: founder + name story + details) */
+  .aboutus{background:var(--bg-sand)}
+  .aboutus-head{max-width:46rem; margin-bottom:36px}
+  .aboutus-head h2{font-size:clamp(2.2rem,5vw,3.1rem); color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .aboutus-head h2{color:#fff} }
+  .aboutus-head h2 em{font-style:italic; color:var(--coral-deep)}
+  @media (prefers-color-scheme: dark){ .aboutus-head h2 em{color:var(--gold)} }
+  .aboutus-head p{color:var(--muted); margin:14px 0 0; font-size:1.08rem}
+  .aboutus-grid{display:grid; gap:36px; align-items:start}
+  @media (min-width:960px){ .aboutus-grid{grid-template-columns:.85fr 1.15fr} }
+  .founder{text-align:center; background:var(--card); border:1px solid var(--line); border-radius:18px; padding:30px 24px 26px}
+  .founder-photo{width:min(360px,100%); aspect-ratio:3/4; object-fit:cover; object-position:50% 18%; border-radius:20px; border:4px solid var(--coral); box-shadow:0 0 0 6px var(--card), 0 0 0 9px var(--teal), var(--shadow); margin:6px auto 0}
+  .founder .hello{font-size:2.5rem; color:var(--coral-deep); line-height:1.1; display:block; margin-top:20px}
+  @media (prefers-color-scheme: dark){ .founder .hello{color:var(--gold)} }
+  .founder b{display:block; font-family:"Playfair Display",serif; font-size:1.15rem; color:var(--navy); margin-top:2px}
+  @media (prefers-color-scheme: dark){ .founder b{color:#fff} }
+  .founder .role{font-size:.9rem; color:var(--muted); font-weight:600}
+  .founder p{color:var(--muted); font-size:.97rem; margin:14px 0 0; text-align:left}
+  .founder p strong{color:var(--ink)}
+  .aboutus-copy h3{font-size:clamp(1.5rem,3.4vw,2rem); color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .aboutus-copy h3{color:#fff} }
+  .aboutus-copy h3 em{font-style:italic; color:var(--coral-deep)}
+  @media (prefers-color-scheme: dark){ .aboutus-copy h3 em{color:var(--gold)} }
+  .aboutus-copy p{color:var(--muted); margin:14px 0 0; font-size:1.03rem}
+  .aboutus-copy p strong{color:var(--ink)}
+  .compass-points{display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:22px; font-family:"Playfair Display",serif; font-size:1rem; color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .compass-points{color:var(--gold)} }
+  .compass-points .rose{width:30px; height:30px; color:var(--teal-deep); flex:none}
+  @media (prefers-color-scheme: dark){ .compass-points .rose{color:var(--gold)} }
+  .compass-points .arr{color:var(--coral-deep); font-family:"Manrope",sans-serif; font-weight:800}
+  .details-panel{margin-top:40px; background:linear-gradient(135deg,var(--teal-dark),var(--teal-deep)); color:#fff; border-radius:18px; padding:30px 24px; position:relative; overflow:hidden}
+  @media (min-width:760px){ .details-panel{padding:38px 40px} }
+  .details-panel h3{color:#fff; font-size:clamp(1.5rem,3.4vw,2rem)}
+  .details-panel h3 em{font-style:italic; color:var(--gold)}
+  .details-panel .big-line{font-family:"Playfair Display",serif; font-style:italic; font-size:clamp(1.3rem,3vw,1.6rem); color:var(--gold); margin:16px 0 0; line-height:1.35}
+  .details-panel p{color:#D9F2EF; margin:12px 0 0; max-width:44rem}
+  .detail-list{list-style:none; margin:24px 0 0; padding:0; display:grid; gap:12px}
+  @media (min-width:700px){ .detail-list{grid-template-columns:1fr 1fr} }
+  .detail-list li{display:flex; gap:11px; align-items:flex-start; background:rgba(255,255,255,.06); border:1px solid rgba(255,197,61,.5); border-radius:10px; padding:13px 15px; font-size:.97rem; font-weight:600; line-height:1.45}
+  .detail-list li svg{width:20px; height:20px; color:var(--gold); flex:none; margin-top:2px}
+  .detail-list li span small{display:block; font-weight:500; color:#BFE8E3; font-size:.88rem; margin-top:2px}
+
+  /* Area */
+  .area{background:linear-gradient(120deg,var(--coral-deep),#D6451F); color:#fff; text-align:center; position:relative; overflow:hidden}
+  .area .rose-bg{position:absolute; width:520px; height:520px; left:50%; top:50%; transform:translate(-50%,-50%); color:#fff; opacity:.05; pointer-events:none}
+  .area h2{color:#fff; font-size:clamp(1.9rem,4vw,2.6rem); position:relative}
+  .area p{color:#FFE8DF; max-width:38rem; margin:16px auto 0; position:relative}
+  .area-route{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:30px; position:relative; font-family:"Playfair Display",serif; font-size:1.15rem}
+  .area-route .dot{width:9px; height:9px; border-radius:50%; background:var(--gold)}
+  .area-route .ln{width:44px; height:1px; background:rgba(255,255,255,.55)}
+
+  /* Quote / form */
+  .quote-grid{display:grid; gap:36px}
+  @media (min-width:960px){ .quote-grid{grid-template-columns:.9fr 1.1fr; align-items:start} }
+  .quote-copy h2{font-size:clamp(1.9rem,4vw,2.6rem); color:var(--navy)}
+  @media (prefers-color-scheme: dark){ .quote-copy h2{color:#fff} }
+  .quote-copy p{color:var(--muted); margin:14px 0 0}
+  .call-big{display:flex; align-items:center; gap:16px; margin-top:28px; background:var(--bg-soft); border:1px solid var(--line); border-radius:var(--radius); padding:20px}
+  .call-big .ic{width:52px; height:52px; border-radius:50%; background:var(--coral-deep); display:grid; place-items:center; flex:none}
+  .call-big .ic svg{width:24px; height:24px; color:#fff}
+  .call-big span{display:block; font-size:.85rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
+  .call-big a{font-family:"Playfair Display",serif; font-size:1.6rem; font-weight:700; color:var(--navy); text-decoration:none}
+  @media (prefers-color-scheme: dark){ .call-big a{color:#fff} }
+  .call-big a:hover{color:var(--teal-deep)}
+  form.quote{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:26px; box-shadow:var(--shadow)}
+  form.quote h3{font-size:1.35rem; color:var(--navy); margin-bottom:6px}
+  @media (prefers-color-scheme: dark){ form.quote h3{color:#fff} }
+  form.quote > p{margin:0 0 18px; color:var(--muted); font-size:.95rem}
+  .f-grid{display:grid; gap:14px}
+  @media (min-width:620px){ .f-grid{grid-template-columns:1fr 1fr} .f-full{grid-column:1/-1} }
+  label.f{display:block; font-weight:700; font-size:.9rem}
+  label.f span{display:block; margin-bottom:6px}
+  input, select, textarea{
+    width:100%; font:inherit; font-size:16px; color:var(--ink);
+    background:var(--bg); border:1px solid var(--line); border-radius:10px;
+    padding:12px 14px; min-height:48px;
+  }
+  textarea{min-height:96px; resize:vertical}
+  input:focus, select:focus, textarea:focus{outline:2px solid var(--teal); outline-offset:1px; border-color:var(--teal)}
+  .form-actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:18px}
+  .form-note{font-size:.88rem; color:var(--muted); margin-top:14px}
+  .form-done{display:none; margin-top:16px; background:var(--bg-soft); border:1px solid var(--teal); border-radius:10px; padding:14px 16px; font-size:.95rem}
+  .form-done.show{display:block}
+
+  /* Footer */
+  footer{background:var(--teal-dark); color:#fff; padding-top:54px; padding-bottom:110px}
+  @media (min-width:761px){ footer{padding-bottom:54px} }
+  .foot-grid{display:grid; gap:32px}
+  @media (min-width:900px){ .foot-grid{grid-template-columns:1.3fr 1fr 1fr} }
+  .foot-brand{display:flex; gap:12px; align-items:center}
+  .foot-brand .rose{width:48px; height:48px; color:var(--gold)}
+  .foot-brand .b1{display:block; font-family:"Playfair Display",serif; letter-spacing:.14em; font-size:.8rem; text-transform:uppercase; font-weight:700}
+  .foot-brand .b2{display:block; font-family:"Playfair Display",serif; font-size:1.3rem}
+  .foot-brand .b2 .bigm{font-family:"Great Vibes",cursive; font-size:1.66rem; color:var(--gold); line-height:0}
+  footer p{color:#CDEEE9; font-size:.95rem; margin:14px 0 0; max-width:22rem}
+  footer h4{font-family:"Playfair Display",serif; margin:0 0 12px; font-size:1.05rem; color:var(--gold); font-weight:600}
+  footer ul{list-style:none; margin:0; padding:0}
+  footer li a{color:#E7EDF3; text-decoration:none; display:inline-flex; align-items:center; min-height:36px; padding:4px 0; font-size:.95rem}
+  footer li a:hover{color:var(--gold)}
+  .foot-phone{font-family:"Playfair Display",serif; font-size:1.7rem; color:#fff; text-decoration:none; font-weight:700}
+  .foot-phone:hover{color:var(--gold)}
+  .foot-bottom{border-top:1px solid rgba(255,197,61,.4); margin-top:38px; padding-top:20px; display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; font-size:.85rem; color:#9CCFC9}
+  .foot-bottom .script{font-size:1.5rem; color:var(--gold)}
+
+  /* Mobile call bar */
+  .callbar{
+    position:fixed; left:0; right:0; bottom:0; z-index:70;
+    display:flex; gap:10px; padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:var(--header-bg); backdrop-filter:blur(10px); border-top:1px solid var(--line);
+  }
+  .callbar a{flex:1; min-width:0; font-size:.95rem; padding-left:10px; padding-right:10px; text-align:center}
+  .callbar a:first-child{white-space:normal; line-height:1.25}
+  @media (min-width:761px){ .callbar{display:none} }
+
+  /* Content is always visible — no scroll-gated rendering. */
+</style>
+</head>
+<body>
+
+<!-- Compass rose symbol -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="rose" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="50" cy="50" r="42.5" fill="none" stroke="currentColor" stroke-width="3.4" pathLength="60" stroke-dasharray="0.35 0.65" opacity=".75"/>
+    <circle cx="50" cy="50" r="31" fill="none" stroke="currentColor" stroke-width=".9" opacity=".7"/>
+    <circle cx="50" cy="50" r="22" fill="none" stroke="currentColor" stroke-width=".7" opacity=".5"/>
+    <polygon points="50,6 55.5,44.5 94,50 55.5,55.5 50,94 44.5,55.5 6,50 44.5,44.5" fill="currentColor"/>
+    <polygon points="50,19 53.8,46.2 81,50 53.8,53.8 50,81 46.2,53.8 19,50 46.2,46.2" fill="#FFC53D" transform="rotate(45 50 50)"/>
+    <circle cx="50" cy="50" r="4.6" fill="#FF6B4A" stroke="currentColor" stroke-width="1.2"/>
+  </symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/>
+  </symbol>
+  <symbol id="ic-check" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 12.5l5 5L20 6.5"/>
+  </symbol>
+  <symbol id="ic-star" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/>
+  </symbol>
+  <symbol id="ic-clock" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="ic-shield" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1.2 13.6l6-6-1.4-1.4-4.6 4.6-2.2-2.2-1.4 1.4 3.6 3.6z"/>
+  </symbol>
+  <symbol id="ic-key" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M14.5 2a7.5 7.5 0 0 0-7.3 9.2L2 16.4V22h5.6v-3h3v-3h3l1.2-1.2A7.5 7.5 0 1 0 14.5 2zm0 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/>
+  </symbol>
+</svg>
+
+<header class="site" id="siteHeader">
+  <div class="wrap header-in">
+    <a class="brand" href="#top" aria-label="Directional Home Details — home">
+      <svg class="rose" aria-hidden="true"><use href="#rose"/></svg>
+      <span class="brand-name">
+        <span class="b1">Directional</span>
+        <span class="b2">Ho<span class="bigm">M</span>e Details</span>
+      </span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#turnovers">For Hosts</a>
+      <a href="#quote">Get a Quote</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline btn-phone" href="tel:+19192626079">
+        <svg class="ph-ic" aria-hidden="true"><use href="#ic-phone"/></svg>
+        919-262-6079
+      </a>
+      <a class="btn btn-gold btn-book-h" href="#quote">Book a Cleaning</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <svg class="compass-watermark" aria-hidden="true"><use href="#rose"/></svg>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-name">
+          <svg class="rose" aria-hidden="true"><use href="#rose"/></svg>
+          <span>Directional Home Details</span>
+        </div>
+        <h1>Clean Spaces.<br /><em>Better Stays.</em></h1>
+        <p class="lede">
+          North Carolina&rsquo;s detail-obsessed cleaning team for <strong>short-term rental
+          turnovers</strong> and <strong>residential homes</strong>. We handle the details so your
+          guests arrive to perfection &mdash; and you come home to a house that feels brand new.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-navy" href="tel:+19192626079">
+            <svg class="ph-ic" aria-hidden="true"><use href="#ic-phone"/></svg>
+            Call 919-262-6079
+          </a>
+          <a class="btn btn-gold" href="#quote">Get a Quote</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>200+</b><span>clients served every month</span></div>
+          <div><b>Coast &rarr; Hillsborough</b><span>service across North Carolina</span></div>
+          <div><b>Insured</b><span>trusted &amp; experienced team</span></div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/hero-living.jpg" alt="Bright coastal living room with a white sofa, woven textures and a view of the water, cleaned and guest-ready" />
+        <div class="hero-card">
+          <svg class="rose" aria-hidden="true"><use href="#rose"/></svg>
+          <p><b>Guest-ready, every time.</b>
+          Every detail cleaned, checked and finished &mdash; before your next guest walks in.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST BAR -->
+  <div class="trust">
+    <div class="wrap trust-in">
+      <div class="trust-item">
+        <svg aria-hidden="true"><use href="#ic-key"/></svg>
+        <div><b>Turnover Experts</b><span>We clean every detail so your property is guest-ready.</span></div>
+      </div>
+      <div class="trust-item">
+        <svg aria-hidden="true"><use href="#ic-star"/></svg>
+        <div><b>5-Star Results</b><span>High standards that earn 5-star reviews and repeat bookings.</span></div>
+      </div>
+      <div class="trust-item">
+        <svg aria-hidden="true"><use href="#ic-clock"/></svg>
+        <div><b>Fast &amp; Reliable</b><span>On-time, thorough cleanings so your next guest arrives to perfection.</span></div>
+      </div>
+      <div class="trust-item">
+        <svg aria-hidden="true"><use href="#ic-shield"/></svg>
+        <div><b>Trusted &amp; Insured</b><span>Experienced, insured and committed to excellence.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule">What we clean</div>
+        <h2>Every home, pointed in the <em>right direction</em></h2>
+        <p>From same-day rental turnovers to the recurring clean that keeps your own home
+        effortless &mdash; one team, one standard: nothing missed.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <img src="assets/bedroom.jpg" alt="Hotel-crisp bedroom with white linens and sunlight, prepared for the next guest" />
+          <div class="svc-body">
+            <span class="tag">For Airbnb &amp; Vrbo hosts</span>
+            <h3>Short-Term Rental Turnovers</h3>
+            <p>Our signature service. A full reset between guests, done to hotel standard and checked twice.</p>
+            <ul>
+              <li>Full clean of every room, top to bottom</li>
+              <li>Fresh linens &amp; laundry handled</li>
+              <li>Supplies restocked &amp; spaces staged</li>
+              <li>Photo-ready and guest-ready on time</li>
+            </ul>
+          </div>
+        </article>
+        <article class="svc reveal">
+          <img src="assets/kitchen.jpg" alt="Sparkling white kitchen with a clean island and polished counters" />
+          <div class="svc-body">
+            <span class="tag">Weekly &middot; Bi-weekly &middot; Monthly</span>
+            <h3>Residential House Cleaning</h3>
+            <p>Recurring cleaning for busy households that want to come home to calm &mdash; not a chore list.</p>
+            <ul>
+              <li>Kitchens &amp; bathrooms scrubbed and shined</li>
+              <li>Dusting, floors and all the easy-to-miss spots</li>
+              <li>Same trusted team, visit after visit</li>
+              <li>A schedule that fits your life</li>
+            </ul>
+          </div>
+        </article>
+        <article class="svc reveal">
+          <img src="assets/bathroom.jpg" alt="Bright marble bathroom with a spotless vanity, mirror and freestanding tub" />
+          <div class="svc-body">
+            <span class="tag">Top to bottom</span>
+            <h3>Deep Cleaning</h3>
+            <p>The full reset your home deserves &mdash; seasonal, before guests arrive, or whenever it needs a fresh start.</p>
+            <ul>
+              <li>Baseboards, vents, fixtures and grout</li>
+              <li>Inside details most cleanings skip</li>
+              <li>Every surface washed, wiped and polished</li>
+              <li>Perfect first step before recurring service</li>
+            </ul>
+          </div>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-body">
+            <span class="tag">Start &amp; finish clean</span>
+            <h3>Move-In / Move-Out Cleaning</h3>
+            <p>Leave the old place spotless and walk into the new one already shining. Empty-home cleans done thoroughly, room by room.</p>
+            <ul>
+              <li>Cabinets, drawers and closets emptied &amp; wiped</li>
+              <li>Appliances and bathrooms detailed</li>
+              <li>Landlord- and listing-ready finish</li>
+            </ul>
+          </div>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-body">
+            <span class="tag">Finishing touches</span>
+            <h3>Carpet Cleaning &amp; Add-Ons</h3>
+            <p>The extras that make a clean feel complete &mdash; add them to any visit or turnover.</p>
+            <ul>
+              <li>Carpet cleaning throughout the home</li>
+              <li>Laundry washed, folded and reset</li>
+              <li>Restocking of guest &amp; household essentials</li>
+            </ul>
+          </div>
+        </article>
+        <article class="svc svc-text reveal">
+          <div class="svc-body">
+            <h3>Not sure what your home needs?</h3>
+            <p>Tell Jennifer about your home or rental and she&rsquo;ll point you to the right clean &mdash; no pressure, no packages you don&rsquo;t need.</p>
+            <a href="tel:+19192626079">Call 919-262-6079 &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section class="aboutus" id="about">
+    <div class="wrap">
+      <div class="aboutus-head reveal">
+        <div class="rule">About Us</div>
+        <h2>About Us &mdash; a family business, <em>named after her kids</em></h2>
+        <p>Directional Home Details is Jennifer Parker&rsquo;s company &mdash; built on referrals,
+        never advertised, and named for the three people her whole world revolves around.</p>
+      </div>
+      <div class="aboutus-grid">
+        <div class="founder reveal">
+          <img class="founder-photo" src="assets/jennifer-donkeys.jpg" alt="Jennifer Parker, founder of Directional Home Details, smiling outdoors in a navy dress with long dark wavy hair while a white donkey nuzzles her hand" />
+          <span class="hello script">Hi, I&rsquo;m Jennifer!</span>
+          <b>Jennifer Parker</b>
+          <span class="role">Founder &amp; owner-operator</span>
+          <p>
+            Jennifer built this business the quiet way &mdash; <strong>she has never advertised</strong>.
+            Just clean homes, happy hosts and word of mouth, growing into
+            <strong>more than 200 clients a month</strong> from the North Carolina coast to Hillsborough.
+          </p>
+          <p>
+            Every home on the schedule gets the same promise: cleaned like it matters, because to
+            the family inside it &mdash; or the guests about to arrive &mdash; it does.
+          </p>
+          <div class="about-facts" style="justify-content:center">
+            <span>Owner-operated</span>
+            <span>200+ clients a month</span>
+            <span>Trusted &amp; insured</span>
+            <span>Built on referrals</span>
+          </div>
+        </div>
+        <div class="aboutus-copy reveal">
+          <h3>The story behind the name: <em>every point points home</em></h3>
+          <p>
+            The name wasn&rsquo;t dreamed up in a marketing meeting. It came from Jennifer&rsquo;s
+            kitchen table &mdash; and from her children.
+          </p>
+          <div class="names">
+            <div class="name-card">
+              <span class="script">Easton</span>
+              <b>Her son &mdash; East</b>
+              <span>One half of the compass that gave the company its direction.</span>
+            </div>
+            <div class="name-card">
+              <span class="script">Weston</span>
+              <b>Her son &mdash; West</b>
+              <span>The other half. East and West, always pointing home.</span>
+            </div>
+            <div class="name-card">
+              <span class="script">Makenzie</span>
+              <b>Her daughter</b>
+              <span>That&rsquo;s why the <strong>M</strong> in Ho<strong>M</strong>e is the biggest letter in the name.</span>
+            </div>
+          </div>
+          <p>
+            Her sons <strong>Easton and Weston are East and West</strong> &mdash; that is where
+            &ldquo;Directional&rdquo; and the compass come from. A compass shows direction, and hers
+            has always pointed the same way: <strong>home, to her babies</strong>. Her daughter
+            <strong>Makenzie</strong> is in the name too &mdash; she is the reason the
+            <strong>M</strong> in Ho<strong>M</strong>e stands taller than every other letter.
+          </p>
+          <p>
+            It is a family business in the truest sense: named after her kids, run on a mother&rsquo;s
+            standards, and pointed &mdash; every clean, every time &mdash; toward home.
+          </p>
+          <div class="compass-points" aria-label="Easton is East, Weston is West, Makenzie is the big M in Home">
+            <svg class="rose" aria-hidden="true"><use href="#rose"/></svg>
+            <span>Easton &middot; East</span><span class="arr">&harr;</span>
+            <span>Weston &middot; West</span><span class="arr">&middot;</span>
+            <span>Makenzie &middot; the big M</span>
+          </div>
+          <div class="story-quote">
+            <p>&ldquo;My world revolves around my babies.&rdquo;</p>
+            <cite>&mdash; Jennifer Parker, founder</cite>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-panel reveal">
+        <div class="rule" style="color:var(--gold)">Attention to details</div>
+        <h3>Details make <em>the difference</em></h3>
+        <p class="big-line">&ldquo;I catch the things most don&rsquo;t.&rdquo;</p>
+        <p>
+          Jennifer is detail-oriented to her core &mdash; in her own words,
+          &ldquo;I take pride in the little details that make a big impact.&rdquo; A tidy room is
+          easy. What guests and homeowners actually notice is everything below:
+        </p>
+        <ul class="detail-list">
+          <li><svg aria-hidden="true"><use href="#ic-check"/></svg><span>Corners &amp; edges<small>The lines where walls, floors and counters meet &mdash; checked, not skipped.</small></span></li>
+          <li><svg aria-hidden="true"><use href="#ic-check"/></svg><span>Baseboards &amp; overlooked spots<small>Dust where most cleanings never look &mdash; she looks.</small></span></li>
+          <li><svg aria-hidden="true"><use href="#ic-check"/></svg><span>Glass &amp; mirrors, streak-free<small>A streak on the glass is a detail. It doesn&rsquo;t survive her final check.</small></span></li>
+          <li><svg aria-hidden="true"><use href="#ic-check"/></svg><span>Linens &amp; pillows, set right<small>Beds made crisp, towels folded, pillows exactly where the photo shows them.</small></span></li>
+          <li><svg aria-hidden="true"><use href="#ic-check"/></svg><span>Restocked &amp; reset<small>Supplies refilled and every space put back the way your listing promises.</small></span></li>
+          <li><svg aria-hidden="true"><use href="#ic-check"/></svg><span>A final walk-through, every time<small>One last slow look before the door closes &mdash; that&rsquo;s when the missed things get caught.</small></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TURNOVER WORKS -->
+  <section class="how" id="turnovers">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <div class="rule">For hosts</div>
+        <h2>How a turnover <em>works</em></h2>
+        <p>You run the bookings. We run everything between them.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <svg class="rose" aria-hidden="true"><use href="#rose"/></svg>
+          <span class="step-num">01</span>
+          <h3>Guests check out</h3>
+          <p>Your calendar is our compass. We track your checkouts and arrive on schedule &mdash; same-day turnovers included.</p>
+        </div>
+        <div class="step reveal">
+          <svg class="rose" aria-hidden="true"><use href="#rose"/></svg>
+          <span class="step-num">02</span>
+          <h3>We clean, launder &amp; restock</h3>
+          <p>Every room cleaned in detail, linens laundered and beds made crisp, essentials restocked, spaces reset exactly as your listing shows them.</p>
+        </div>
+        <div class="step reveal">
+          <svg class="rose" aria-hidden="true"><use href="#rose"/></svg>
+          <span class="step-num">03</span>
+          <h3>Photo-ready &amp; guest-ready</h3>
+          <p>A final detail check before we leave &mdash; so your next guest arrives to perfection and your next review earns its five stars.</p>
+        </div>
+      </div>
+      <p class="how-note reveal">&ldquo;We handle the details so you can focus on your guests.&rdquo;</p>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule">Why Directional</div>
+        <h2>Details make <em>the difference</em></h2>
+        <p>Anyone can tidy a room. We catch the things most don&rsquo;t &mdash; and that is exactly what guests and homeowners notice.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why reveal">
+          <div class="ic"><svg aria-hidden="true"><use href="#ic-key"/></svg></div>
+          <h3>Turnover Experts</h3>
+          <p>We clean every detail so your property is guest-ready.</p>
+        </div>
+        <div class="why reveal">
+          <div class="ic"><svg aria-hidden="true"><use href="#ic-star"/></svg></div>
+          <h3>5-Star Results</h3>
+          <p>High standards that earn 5-star reviews and repeat bookings.</p>
+        </div>
+        <div class="why reveal">
+          <div class="ic"><svg aria-hidden="true"><use href="#ic-clock"/></svg></div>
+          <h3>Fast &amp; Reliable</h3>
+          <p>On-time, thorough cleanings so your next guest arrives to perfection.</p>
+        </div>
+        <div class="why reveal">
+          <div class="ic"><svg aria-hidden="true"><use href="#ic-shield"/></svg></div>
+          <h3>Trusted &amp; Insured</h3>
+          <p>Experienced, insured and committed to excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="area">
+    <svg class="rose-bg" aria-hidden="true"><use href="#rose"/></svg>
+    <div class="wrap reveal">
+      <h2>From the coast to Hillsborough</h2>
+      <p>One team covering homes and rentals across North Carolina &mdash; beach houses at the
+      coast, family homes in between, and everywhere our clients&rsquo; compasses point.</p>
+      <div class="area-route" aria-label="Service area: North Carolina coast to Hillsborough">
+        <span>The Coast</span><span class="ln"></span><span class="dot"></span><span class="ln"></span>
+        <span>Across North Carolina</span><span class="ln"></span><span class="dot"></span><span class="ln"></span>
+        <span>Hillsborough</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote">
+    <div class="wrap quote-grid">
+      <div class="quote-copy reveal">
+        <div class="rule">Book a cleaning</div>
+        <h2>Get your free quote</h2>
+        <p>Tell us a little about your home or rental and Jennifer will get back to you with a
+        quote and the next available dates. Prefer to talk it through? Call &mdash; a real person
+        answers, and her name is Jennifer.</p>
+        <div class="call-big">
+          <div class="ic"><svg aria-hidden="true"><use href="#ic-phone"/></svg></div>
+          <div>
+            <span>Call or text</span>
+            <a href="tel:+19192626079">919-262-6079</a>
+          </div>
+        </div>
+        <p style="margin-top:22px">
+          Serving <strong>200+ clients a month</strong>, from the North Carolina coast to
+          Hillsborough &mdash; for Airbnb &amp; Vrbo hosts and homeowners alike.
+        </p>
+      </div>
+      <form class="quote reveal" id="quoteForm" novalidate>
+        <h3>Request a quote</h3>
+        <p>Fill this in and tap &ldquo;Text my request&rdquo; &mdash; your messaging app opens with everything ready to send to Jennifer.</p>
+        <div class="f-grid">
+          <label class="f"><span>Your name *</span>
+            <input type="text" name="name" autocomplete="name" required placeholder="Jane Smith" />
+          </label>
+          <label class="f"><span>Your phone *</span>
+            <input type="tel" name="phone" autocomplete="tel" required placeholder="(919) 555-0123" />
+          </label>
+          <label class="f"><span>Service needed *</span>
+            <select name="service" required>
+              <option value="">Choose a service&hellip;</option>
+              <option>Short-Term Rental Turnover</option>
+              <option>Residential Cleaning (Recurring)</option>
+              <option>Deep Cleaning</option>
+              <option>Move-In / Move-Out Cleaning</option>
+              <option>Carpet Cleaning / Add-Ons</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label class="f"><span>Property size</span>
+            <select name="size">
+              <option value="">Choose&hellip;</option>
+              <option>Studio / 1 bed, 1 bath</option>
+              <option>2 bed, 2 bath</option>
+              <option>3 bed, 2 bath</option>
+              <option>4+ bed, 3+ bath</option>
+              <option>Other / not sure</option>
+            </select>
+          </label>
+          <label class="f"><span>Preferred date</span>
+            <input type="date" name="date" />
+          </label>
+          <label class="f"><span>City / area</span>
+            <input type="text" name="city" placeholder="e.g. Hillsborough, NC" />
+          </label>
+          <label class="f f-full"><span>Anything we should know?</span>
+            <textarea name="message" placeholder="Rental or home? Checkout times, pets, gate codes — any detail helps. Jennifer catches the rest."></textarea>
+          </label>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-gold">Text My Request to Jennifer</button>
+          <a class="btn btn-outline" href="tel:+19192626079">
+            <svg class="ph-ic" aria-hidden="true"><use href="#ic-phone"/></svg>
+            Call Instead
+          </a>
+        </div>
+        <div class="form-done" id="formDone" role="status">
+          Your messaging app should now be open with your request ready &mdash; just press send.
+          Nothing arrived? Call or text Jennifer directly at
+          <a href="tel:+19192626079"><strong>919-262-6079</strong></a>.
+        </div>
+        <p class="form-note">No spam, no obligation &mdash; just a quote and available dates.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg class="rose" aria-hidden="true"><use href="#rose"/></svg>
+          <span>
+            <span class="b1">Directional</span>
+            <span class="b2">Ho<span class="bigm">M</span>e Details</span>
+          </span>
+        </div>
+        <p>Clean Spaces. Better Stays. Short-term rental turnovers and residential cleaning
+        across North Carolina &mdash; from the coast to Hillsborough.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Short-Term Rental Turnovers</a></li>
+          <li><a href="#services">Residential House Cleaning</a></li>
+          <li><a href="#services">Deep Cleaning</a></li>
+          <li><a href="#services">Move-In / Move-Out</a></li>
+          <li><a href="#services">Carpet Cleaning &amp; Add-Ons</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <a class="foot-phone" href="tel:+19192626079">919-262-6079</a>
+        <ul style="margin-top:10px">
+          <li><a href="#quote">Request a quote</a></li>
+          <li><a href="#about">About Us — the story behind the name</a></li>
+          <li><a href="#turnovers">For Airbnb &amp; Vrbo hosts</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="yr">2026</span> Directional Home Details &middot; North Carolina</span>
+      <span class="script">Details make the difference.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile call bar -->
+<div class="callbar">
+  <a class="btn btn-navy" href="tel:+19192626079">
+    <svg class="ph-ic" aria-hidden="true"><use href="#ic-phone"/></svg>
+    Call 919-262-6079
+  </a>
+  <a class="btn btn-gold" href="#quote">Get a Quote</a>
+</div>
+
+<script>
+(function(){
+  // Header shadow on scroll
+  var header = document.getElementById('siteHeader');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY > 8); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // Footer year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Quote form -> pre-filled SMS to Jennifer
+  var form = document.getElementById('quoteForm');
+  var done = document.getElementById('formDone');
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var d = new FormData(form);
+    var name = (d.get('name') || '').toString().trim();
+    var phone = (d.get('phone') || '').toString().trim();
+    var service = (d.get('service') || '').toString().trim();
+    if (!name || !phone || !service) {
+      form.reportValidity();
+      return;
+    }
+    var lines = ['Hi Jennifer! I would like a quote from Directional Home Details.'];
+    lines.push('Name: ' + name);
+    lines.push('My phone: ' + phone);
+    lines.push('Service: ' + service);
+    var size = (d.get('size') || '').toString().trim();
+    if (size) lines.push('Property size: ' + size);
+    var date = (d.get('date') || '').toString().trim();
+    if (date) lines.push('Preferred date: ' + date);
+    var city = (d.get('city') || '').toString().trim();
+    if (city) lines.push('Area: ' + city);
+    var msg = (d.get('message') || '').toString().trim();
+    if (msg) lines.push('Notes: ' + msg);
+    var body = encodeURIComponent(lines.join('\n'));
+    window.location.href = 'sms:+19192626079?&body=' + body;
+    done.classList.add('show');
+    done.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'nearest'});
+  });
+})();
+</script>
+</body>
+</html>
